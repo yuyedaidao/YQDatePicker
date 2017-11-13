@@ -170,12 +170,16 @@ public class YQDatePicker: UIView {
         
     }
     
-    public func show(`in` view: UIView? = UIApplication.shared.keyWindow) {
-        let datePicker = YQDatePicker()
-        guard let view = view else {
+    public func show(`in` view: UIView? = UIApplication.shared.windows.last) {
+        guard let v = view else {
             return
         }
-        view.addSubview(datePicker)
+        let datePicker = YQDatePicker()
+        v.addSubview(datePicker)
+        let views = ["datePicker" : datePicker]
+        datePicker.translatesAutoresizingMaskIntoConstraints = false
+        v.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[datePicker]-0-|", options: NSLayoutFormatOptions.alignAllLeading, metrics: nil, views:views))
+        v.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[datePicker]-0-|", options: NSLayoutFormatOptions.alignAllTop, metrics: nil, views: views))
     }
     
 
