@@ -14,6 +14,12 @@
 		55A2DF811FB9B17200829A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A2DF7F1FB9B17200829A94 /* LaunchScreen.storyboard */; };
 		55A2DF8C1FB9B17300829A94 /* YQDatePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2DF8B1FB9B17300829A94 /* YQDatePickerTests.swift */; };
 		55A2DF971FB9B17300829A94 /* YQDatePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2DF961FB9B17300829A94 /* YQDatePickerUITests.swift */; };
+		55A2DFA61FB9B1E500829A94 /* YQDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2DFA51FB9B1E500829A94 /* YQDatePicker.swift */; };
+		55A2DFB51FB9E1A400829A94 /* YQDatePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A2DFAC1FB9E1A300829A94 /* YQDatePicker.framework */; };
+		55A2DFBC1FB9E1A400829A94 /* YQDatePickerFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2DFBB1FB9E1A400829A94 /* YQDatePickerFrameworkTests.swift */; };
+		55A2DFBE1FB9E1A400829A94 /* YQDatePickerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A2DFAE1FB9E1A300829A94 /* YQDatePickerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55A2DFC11FB9E1A400829A94 /* YQDatePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A2DFAC1FB9E1A300829A94 /* YQDatePicker.framework */; };
+		55A2DFC21FB9E1A400829A94 /* YQDatePicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55A2DFAC1FB9E1A300829A94 /* YQDatePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,42 @@
 			remoteGlobalIDString = 55A2DF721FB9B17200829A94;
 			remoteInfo = YQDatePicker;
 		};
+		55A2DFB61FB9E1A400829A94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A2DF6B1FB9B17200829A94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A2DFAB1FB9E1A300829A94;
+			remoteInfo = YQDatePickerFramework;
+		};
+		55A2DFB81FB9E1A400829A94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A2DF6B1FB9B17200829A94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A2DF721FB9B17200829A94;
+			remoteInfo = YQDatePicker;
+		};
+		55A2DFBF1FB9E1A400829A94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A2DF6B1FB9B17200829A94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A2DFAB1FB9E1A300829A94;
+			remoteInfo = YQDatePickerFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55A2DFC61FB9E1A400829A94 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55A2DFC21FB9E1A400829A94 /* YQDatePicker.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		55A2DF731FB9B17200829A94 /* YQDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +88,13 @@
 		55A2DF921FB9B17300829A94 /* YQDatePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQDatePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A2DF961FB9B17300829A94 /* YQDatePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQDatePickerUITests.swift; sourceTree = "<group>"; };
 		55A2DF981FB9B17300829A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55A2DFA51FB9B1E500829A94 /* YQDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQDatePicker.swift; sourceTree = "<group>"; };
+		55A2DFAC1FB9E1A300829A94 /* YQDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YQDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A2DFAE1FB9E1A300829A94 /* YQDatePickerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQDatePickerFramework.h; sourceTree = "<group>"; };
+		55A2DFAF1FB9E1A300829A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55A2DFB41FB9E1A300829A94 /* YQDatePickerFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQDatePickerFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A2DFBB1FB9E1A400829A94 /* YQDatePickerFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQDatePickerFrameworkTests.swift; sourceTree = "<group>"; };
+		55A2DFBD1FB9E1A400829A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A2DFC11FB9E1A400829A94 /* YQDatePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,15 +120,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55A2DFA81FB9E1A300829A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A2DFB11FB9E1A300829A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A2DFB51FB9E1A400829A94 /* YQDatePicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		55A2DF6A1FB9B17200829A94 = {
 			isa = PBXGroup;
 			children = (
+				55A2DFA41FB9B1B800829A94 /* Classes */,
 				55A2DF751FB9B17200829A94 /* YQDatePicker */,
 				55A2DF8A1FB9B17300829A94 /* YQDatePickerTests */,
 				55A2DF951FB9B17300829A94 /* YQDatePickerUITests */,
+				55A2DFAD1FB9E1A300829A94 /* YQDatePickerFramework */,
+				55A2DFBA1FB9E1A400829A94 /* YQDatePickerFrameworkTests */,
 				55A2DF741FB9B17200829A94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +157,8 @@
 				55A2DF731FB9B17200829A94 /* YQDatePicker.app */,
 				55A2DF871FB9B17300829A94 /* YQDatePickerTests.xctest */,
 				55A2DF921FB9B17300829A94 /* YQDatePickerUITests.xctest */,
+				55A2DFAC1FB9E1A300829A94 /* YQDatePicker.framework */,
+				55A2DFB41FB9E1A300829A94 /* YQDatePickerFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +194,44 @@
 			path = YQDatePickerUITests;
 			sourceTree = "<group>";
 		};
+		55A2DFA41FB9B1B800829A94 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				55A2DFA51FB9B1E500829A94 /* YQDatePicker.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		55A2DFAD1FB9E1A300829A94 /* YQDatePickerFramework */ = {
+			isa = PBXGroup;
+			children = (
+				55A2DFAE1FB9E1A300829A94 /* YQDatePickerFramework.h */,
+				55A2DFAF1FB9E1A300829A94 /* Info.plist */,
+			);
+			path = YQDatePickerFramework;
+			sourceTree = "<group>";
+		};
+		55A2DFBA1FB9E1A400829A94 /* YQDatePickerFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				55A2DFBB1FB9E1A400829A94 /* YQDatePickerFrameworkTests.swift */,
+				55A2DFBD1FB9E1A400829A94 /* Info.plist */,
+			);
+			path = YQDatePickerFrameworkTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		55A2DFA91FB9E1A300829A94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A2DFBE1FB9E1A400829A94 /* YQDatePickerFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		55A2DF721FB9B17200829A94 /* YQDatePicker */ = {
@@ -135,10 +241,12 @@
 				55A2DF6F1FB9B17200829A94 /* Sources */,
 				55A2DF701FB9B17200829A94 /* Frameworks */,
 				55A2DF711FB9B17200829A94 /* Resources */,
+				55A2DFC61FB9E1A400829A94 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				55A2DFC01FB9E1A400829A94 /* PBXTargetDependency */,
 			);
 			name = YQDatePicker;
 			productName = YQDatePicker;
@@ -181,6 +289,43 @@
 			productReference = 55A2DF921FB9B17300829A94 /* YQDatePickerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		55A2DFAB1FB9E1A300829A94 /* YQDatePickerFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A2DFC31FB9E1A400829A94 /* Build configuration list for PBXNativeTarget "YQDatePickerFramework" */;
+			buildPhases = (
+				55A2DFA71FB9E1A300829A94 /* Sources */,
+				55A2DFA81FB9E1A300829A94 /* Frameworks */,
+				55A2DFA91FB9E1A300829A94 /* Headers */,
+				55A2DFAA1FB9E1A300829A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YQDatePickerFramework;
+			productName = YQDatePickerFramework;
+			productReference = 55A2DFAC1FB9E1A300829A94 /* YQDatePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55A2DFB31FB9E1A300829A94 /* YQDatePickerFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A2DFC71FB9E1A400829A94 /* Build configuration list for PBXNativeTarget "YQDatePickerFrameworkTests" */;
+			buildPhases = (
+				55A2DFB01FB9E1A300829A94 /* Sources */,
+				55A2DFB11FB9E1A300829A94 /* Frameworks */,
+				55A2DFB21FB9E1A300829A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55A2DFB71FB9E1A400829A94 /* PBXTargetDependency */,
+				55A2DFB91FB9E1A400829A94 /* PBXTargetDependency */,
+			);
+			name = YQDatePickerFrameworkTests;
+			productName = YQDatePickerFrameworkTests;
+			productReference = 55A2DFB41FB9E1A300829A94 /* YQDatePickerFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +350,15 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 55A2DF721FB9B17200829A94;
 					};
+					55A2DFAB1FB9E1A300829A94 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					55A2DFB31FB9E1A300829A94 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 55A2DF721FB9B17200829A94;
+					};
 				};
 			};
 			buildConfigurationList = 55A2DF6E1FB9B17200829A94 /* Build configuration list for PBXProject "YQDatePicker" */;
@@ -223,6 +377,8 @@
 				55A2DF721FB9B17200829A94 /* YQDatePicker */,
 				55A2DF861FB9B17300829A94 /* YQDatePickerTests */,
 				55A2DF911FB9B17300829A94 /* YQDatePickerUITests */,
+				55A2DFAB1FB9E1A300829A94 /* YQDatePickerFramework */,
+				55A2DFB31FB9E1A300829A94 /* YQDatePickerFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +408,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55A2DFAA1FB9E1A300829A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A2DFB21FB9E1A300829A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,6 +431,7 @@
 			files = (
 				55A2DF791FB9B17200829A94 /* ViewController.swift in Sources */,
 				55A2DF771FB9B17200829A94 /* AppDelegate.swift in Sources */,
+				55A2DFA61FB9B1E500829A94 /* YQDatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +451,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55A2DFA71FB9E1A300829A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A2DFB01FB9E1A300829A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A2DFBC1FB9E1A400829A94 /* YQDatePickerFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +478,21 @@
 			isa = PBXTargetDependency;
 			target = 55A2DF721FB9B17200829A94 /* YQDatePicker */;
 			targetProxy = 55A2DF931FB9B17300829A94 /* PBXContainerItemProxy */;
+		};
+		55A2DFB71FB9E1A400829A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55A2DFAB1FB9E1A300829A94 /* YQDatePickerFramework */;
+			targetProxy = 55A2DFB61FB9E1A400829A94 /* PBXContainerItemProxy */;
+		};
+		55A2DFB91FB9E1A400829A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55A2DF721FB9B17200829A94 /* YQDatePicker */;
+			targetProxy = 55A2DFB81FB9E1A400829A94 /* PBXContainerItemProxy */;
+		};
+		55A2DFC01FB9E1A400829A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55A2DFAB1FB9E1A300829A94 /* YQDatePickerFramework */;
+			targetProxy = 55A2DFBF1FB9E1A400829A94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -427,9 +628,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97F5F2AF3C;
 				INFOPLIST_FILE = YQDatePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePicker;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wyq.YQDatePicker-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,9 +643,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97F5F2AF3C;
 				INFOPLIST_FILE = YQDatePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePicker;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wyq.YQDatePicker-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,6 +715,88 @@
 			};
 			name = Release;
 		};
+		55A2DFC41FB9E1A400829A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 97F5F2AF3C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YQDatePickerFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePickerFramework;
+				PRODUCT_MODULE_NAME = YQDatePicker;
+				PRODUCT_NAME = YQDatePicker;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55A2DFC51FB9E1A400829A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 97F5F2AF3C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YQDatePickerFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePickerFramework;
+				PRODUCT_MODULE_NAME = YQDatePicker;
+				PRODUCT_NAME = YQDatePicker;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55A2DFC81FB9E1A400829A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePickerFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePickerFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQDatePicker.app/YQDatePicker";
+			};
+			name = Debug;
+		};
+		55A2DFC91FB9E1A400829A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePickerFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePickerFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQDatePicker.app/YQDatePicker";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,6 +832,24 @@
 			buildConfigurations = (
 				55A2DFA21FB9B17300829A94 /* Debug */,
 				55A2DFA31FB9B17300829A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55A2DFC31FB9E1A400829A94 /* Build configuration list for PBXNativeTarget "YQDatePickerFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A2DFC41FB9E1A400829A94 /* Debug */,
+				55A2DFC51FB9E1A400829A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55A2DFC71FB9E1A400829A94 /* Build configuration list for PBXNativeTarget "YQDatePickerFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A2DFC81FB9E1A400829A94 /* Debug */,
+				55A2DFC91FB9E1A400829A94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

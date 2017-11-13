@@ -6,8 +6,33 @@
 	<dict>
 		<key>YQDatePicker.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>YQDatePickerFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>55A2DF721FB9B17200829A94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55A2DF861FB9B17300829A94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55A2DF911FB9B17300829A94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
