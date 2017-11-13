@@ -20,6 +20,7 @@
 		55A2DFBE1FB9E1A400829A94 /* YQDatePickerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A2DFAE1FB9E1A300829A94 /* YQDatePickerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55A2DFC11FB9E1A400829A94 /* YQDatePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A2DFAC1FB9E1A300829A94 /* YQDatePicker.framework */; };
 		55A2DFC21FB9E1A400829A94 /* YQDatePicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55A2DFAC1FB9E1A300829A94 /* YQDatePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55A2DFCE1FB9F0AB00829A94 /* YQDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2DFA51FB9B1E500829A94 /* YQDatePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -455,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A2DFCE1FB9F0AB00829A94 /* YQDatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +628,7 @@
 		55A2DF9C1FB9B17300829A94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97F5F2AF3C;
@@ -641,6 +644,7 @@
 		55A2DF9D1FB9B17300829A94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97F5F2AF3C;
