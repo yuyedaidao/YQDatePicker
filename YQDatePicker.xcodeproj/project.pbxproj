@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55A2DF771FB9B17200829A94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2DF761FB9B17200829A94 /* AppDelegate.swift */; };
+		55A2DF791FB9B17200829A94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2DF781FB9B17200829A94 /* ViewController.swift */; };
+		55A2DF7C1FB9B17200829A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A2DF7A1FB9B17200829A94 /* Main.storyboard */; };
+		55A2DF7E1FB9B17200829A94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A2DF7D1FB9B17200829A94 /* Assets.xcassets */; };
+		55A2DF811FB9B17200829A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A2DF7F1FB9B17200829A94 /* LaunchScreen.storyboard */; };
+		55A2DF8C1FB9B17300829A94 /* YQDatePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2DF8B1FB9B17300829A94 /* YQDatePickerTests.swift */; };
+		55A2DF971FB9B17300829A94 /* YQDatePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2DF961FB9B17300829A94 /* YQDatePickerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55A2DF881FB9B17300829A94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A2DF6B1FB9B17200829A94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A2DF721FB9B17200829A94;
+			remoteInfo = YQDatePicker;
+		};
+		55A2DF931FB9B17300829A94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A2DF6B1FB9B17200829A94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A2DF721FB9B17200829A94;
+			remoteInfo = YQDatePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55A2DF731FB9B17200829A94 /* YQDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A2DF761FB9B17200829A94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55A2DF781FB9B17200829A94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55A2DF7B1FB9B17200829A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55A2DF7D1FB9B17200829A94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55A2DF801FB9B17200829A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55A2DF821FB9B17200829A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55A2DF871FB9B17300829A94 /* YQDatePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQDatePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A2DF8B1FB9B17300829A94 /* YQDatePickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQDatePickerTests.swift; sourceTree = "<group>"; };
+		55A2DF8D1FB9B17300829A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55A2DF921FB9B17300829A94 /* YQDatePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQDatePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A2DF961FB9B17300829A94 /* YQDatePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQDatePickerUITests.swift; sourceTree = "<group>"; };
+		55A2DF981FB9B17300829A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55A2DF701FB9B17200829A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A2DF841FB9B17300829A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A2DF8F1FB9B17300829A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55A2DF6A1FB9B17200829A94 = {
+			isa = PBXGroup;
+			children = (
+				55A2DF751FB9B17200829A94 /* YQDatePicker */,
+				55A2DF8A1FB9B17300829A94 /* YQDatePickerTests */,
+				55A2DF951FB9B17300829A94 /* YQDatePickerUITests */,
+				55A2DF741FB9B17200829A94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55A2DF741FB9B17200829A94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55A2DF731FB9B17200829A94 /* YQDatePicker.app */,
+				55A2DF871FB9B17300829A94 /* YQDatePickerTests.xctest */,
+				55A2DF921FB9B17300829A94 /* YQDatePickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55A2DF751FB9B17200829A94 /* YQDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				55A2DF761FB9B17200829A94 /* AppDelegate.swift */,
+				55A2DF781FB9B17200829A94 /* ViewController.swift */,
+				55A2DF7A1FB9B17200829A94 /* Main.storyboard */,
+				55A2DF7D1FB9B17200829A94 /* Assets.xcassets */,
+				55A2DF7F1FB9B17200829A94 /* LaunchScreen.storyboard */,
+				55A2DF821FB9B17200829A94 /* Info.plist */,
+			);
+			path = YQDatePicker;
+			sourceTree = "<group>";
+		};
+		55A2DF8A1FB9B17300829A94 /* YQDatePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				55A2DF8B1FB9B17300829A94 /* YQDatePickerTests.swift */,
+				55A2DF8D1FB9B17300829A94 /* Info.plist */,
+			);
+			path = YQDatePickerTests;
+			sourceTree = "<group>";
+		};
+		55A2DF951FB9B17300829A94 /* YQDatePickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55A2DF961FB9B17300829A94 /* YQDatePickerUITests.swift */,
+				55A2DF981FB9B17300829A94 /* Info.plist */,
+			);
+			path = YQDatePickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55A2DF721FB9B17200829A94 /* YQDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A2DF9B1FB9B17300829A94 /* Build configuration list for PBXNativeTarget "YQDatePicker" */;
+			buildPhases = (
+				55A2DF6F1FB9B17200829A94 /* Sources */,
+				55A2DF701FB9B17200829A94 /* Frameworks */,
+				55A2DF711FB9B17200829A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YQDatePicker;
+			productName = YQDatePicker;
+			productReference = 55A2DF731FB9B17200829A94 /* YQDatePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55A2DF861FB9B17300829A94 /* YQDatePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A2DF9E1FB9B17300829A94 /* Build configuration list for PBXNativeTarget "YQDatePickerTests" */;
+			buildPhases = (
+				55A2DF831FB9B17300829A94 /* Sources */,
+				55A2DF841FB9B17300829A94 /* Frameworks */,
+				55A2DF851FB9B17300829A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55A2DF891FB9B17300829A94 /* PBXTargetDependency */,
+			);
+			name = YQDatePickerTests;
+			productName = YQDatePickerTests;
+			productReference = 55A2DF871FB9B17300829A94 /* YQDatePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55A2DF911FB9B17300829A94 /* YQDatePickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A2DFA11FB9B17300829A94 /* Build configuration list for PBXNativeTarget "YQDatePickerUITests" */;
+			buildPhases = (
+				55A2DF8E1FB9B17300829A94 /* Sources */,
+				55A2DF8F1FB9B17300829A94 /* Frameworks */,
+				55A2DF901FB9B17300829A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55A2DF941FB9B17300829A94 /* PBXTargetDependency */,
+			);
+			name = YQDatePickerUITests;
+			productName = YQDatePickerUITests;
+			productReference = 55A2DF921FB9B17300829A94 /* YQDatePickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55A2DF6B1FB9B17200829A94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "王叶庆";
+				TargetAttributes = {
+					55A2DF721FB9B17200829A94 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					55A2DF861FB9B17300829A94 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 55A2DF721FB9B17200829A94;
+					};
+					55A2DF911FB9B17300829A94 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 55A2DF721FB9B17200829A94;
+					};
+				};
+			};
+			buildConfigurationList = 55A2DF6E1FB9B17200829A94 /* Build configuration list for PBXProject "YQDatePicker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55A2DF6A1FB9B17200829A94;
+			productRefGroup = 55A2DF741FB9B17200829A94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55A2DF721FB9B17200829A94 /* YQDatePicker */,
+				55A2DF861FB9B17300829A94 /* YQDatePickerTests */,
+				55A2DF911FB9B17300829A94 /* YQDatePickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55A2DF711FB9B17200829A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A2DF811FB9B17200829A94 /* LaunchScreen.storyboard in Resources */,
+				55A2DF7E1FB9B17200829A94 /* Assets.xcassets in Resources */,
+				55A2DF7C1FB9B17200829A94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A2DF851FB9B17300829A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A2DF901FB9B17300829A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55A2DF6F1FB9B17200829A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A2DF791FB9B17200829A94 /* ViewController.swift in Sources */,
+				55A2DF771FB9B17200829A94 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A2DF831FB9B17300829A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A2DF8C1FB9B17300829A94 /* YQDatePickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A2DF8E1FB9B17300829A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A2DF971FB9B17300829A94 /* YQDatePickerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55A2DF891FB9B17300829A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55A2DF721FB9B17200829A94 /* YQDatePicker */;
+			targetProxy = 55A2DF881FB9B17300829A94 /* PBXContainerItemProxy */;
+		};
+		55A2DF941FB9B17300829A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55A2DF721FB9B17200829A94 /* YQDatePicker */;
+			targetProxy = 55A2DF931FB9B17300829A94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55A2DF7A1FB9B17200829A94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55A2DF7B1FB9B17200829A94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55A2DF7F1FB9B17200829A94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55A2DF801FB9B17200829A94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55A2DF991FB9B17300829A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55A2DF9A1FB9B17300829A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55A2DF9C1FB9B17300829A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55A2DF9D1FB9B17300829A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55A2DF9F1FB9B17300829A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQDatePicker.app/YQDatePicker";
+			};
+			name = Debug;
+		};
+		55A2DFA01FB9B17300829A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQDatePicker.app/YQDatePicker";
+			};
+			name = Release;
+		};
+		55A2DFA21FB9B17300829A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YQDatePicker;
+			};
+			name = Debug;
+		};
+		55A2DFA31FB9B17300829A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQDatePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YQDatePicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55A2DF6E1FB9B17200829A94 /* Build configuration list for PBXProject "YQDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A2DF991FB9B17300829A94 /* Debug */,
+				55A2DF9A1FB9B17300829A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55A2DF9B1FB9B17300829A94 /* Build configuration list for PBXNativeTarget "YQDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A2DF9C1FB9B17300829A94 /* Debug */,
+				55A2DF9D1FB9B17300829A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55A2DF9E1FB9B17300829A94 /* Build configuration list for PBXNativeTarget "YQDatePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A2DF9F1FB9B17300829A94 /* Debug */,
+				55A2DFA01FB9B17300829A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55A2DFA11FB9B17300829A94 /* Build configuration list for PBXNativeTarget "YQDatePickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A2DFA21FB9B17300829A94 /* Debug */,
+				55A2DFA31FB9B17300829A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55A2DF6B1FB9B17200829A94 /* Project object */;
+}
