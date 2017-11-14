@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         datePicker.doneClosure = { datePicker in
             print(datePicker.date)
         }
+        datePicker.widthPercent = 0.8
         datePicker.hideWhenStep = true
     }
     
