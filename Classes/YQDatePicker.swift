@@ -8,6 +8,8 @@
 
 import UIKit
 
+public typealias YQDatePickerClosure = ((_ datePicker: YQDatePicker) -> Void)
+
 @IBDesignable
 public class YQDatePicker: UIView {
 
@@ -71,7 +73,9 @@ public class YQDatePicker: UIView {
     @IBInspectable
     public var date: Date = Date() {
         didSet {
-            datePicker.date = date
+            if datePicker.date.timeIntervalSince1970 != date.timeIntervalSince1970 {
+                datePicker.date = date
+            }
         }
     }
     @IBInspectable
@@ -118,8 +122,8 @@ public class YQDatePicker: UIView {
 //
 //        }
 //    }
-    public var cancelClosure: ((_ datePicker: YQDatePicker) -> Void)?
-    public var doneClosure: ((_ datePicker: YQDatePicker) -> Void)?
+    public var cancelClosure: YQDatePickerClosure?
+    public var doneClosure: YQDatePickerClosure!
     public var hideWhenStep: Bool = true
     
     public override init(frame: CGRect) {
@@ -178,9 +182,8 @@ public class YQDatePicker: UIView {
         guard let v = view else {
             return
         }
-        let datePicker = YQDatePicker()
-        v.addSubview(datePicker)
-        let views = ["datePicker" : datePicker]
+        v.addSubview(self)
+        let views = ["datePicker" : self]
         datePicker.translatesAutoresizingMaskIntoConstraints = false
         v.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[datePicker]-0-|", options: NSLayoutFormatOptions.alignAllLeading, metrics: nil, views:views))
         v.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[datePicker]-0-|", options: NSLayoutFormatOptions.alignAllTop, metrics: nil, views: views))
@@ -200,6 +203,7 @@ extension YQDatePicker {
         defer {
             hide()
         }
+        date = datePicker.date
         guard let closure = cancelClosure else {
             return
         }
@@ -210,6 +214,7 @@ extension YQDatePicker {
         defer {
             hide()
         }
+        date = datePicker.date
         guard let closure = doneClosure else {
             return
         }
@@ -223,6 +228,7 @@ extension YQDatePicker {
                 return
             }
             closure(self)
+             hide()
         }
         
     }
@@ -234,6 +240,7 @@ extension YQDatePicker {
                 return
             }
             closure(self)
+            hide()
         }
     }
 }

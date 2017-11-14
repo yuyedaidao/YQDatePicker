@@ -14,7 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let datePicker = YQDatePicker()
-        datePicker.show()
+        datePicker.show(in: view)
+        datePicker.doneClosure = { datePicker in
+            print(datePicker.date)
+        }
+        datePicker.hideWhenStep = true
     }
     
 
