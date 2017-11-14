@@ -184,7 +184,7 @@ public class YQDatePicker: UIView {
         }
         v.addSubview(self)
         let views = ["datePicker" : self]
-        datePicker.translatesAutoresizingMaskIntoConstraints = false
+        translatesAutoresizingMaskIntoConstraints = false
         v.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[datePicker]-0-|", options: NSLayoutFormatOptions.alignAllLeading, metrics: nil, views:views))
         v.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[datePicker]-0-|", options: NSLayoutFormatOptions.alignAllTop, metrics: nil, views: views))
     }
