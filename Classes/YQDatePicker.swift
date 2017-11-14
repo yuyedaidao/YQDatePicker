@@ -49,7 +49,9 @@ public class YQDatePicker: UIView {
         let tool = UIToolbar()
         let cancel = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelAction))
         let done  = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneAction))
-        tool.items = [cancel, UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil), done]
+        let space = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
+        space.width = 10
+        tool.items = [space, cancel, UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil), done, space]
         tool.setShadowImage(UIImage(), forToolbarPosition: UIBarPosition.any)
         cancelItem = cancel
         return tool
@@ -59,7 +61,9 @@ public class YQDatePicker: UIView {
         let tool = UIToolbar()
         let previous = UIBarButtonItem(title: "前一天", style: .plain, target: self, action: #selector(previousAction))
         let next = UIBarButtonItem(title: "后一天", style: .plain, target: self, action: #selector(nextAction))
-        tool.items = [previous, UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil), next]
+        let space = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
+        space.width = 10
+        tool.items = [space, previous, UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil), next, space]
         tool.setShadowImage(UIImage(), forToolbarPosition: UIBarPosition.any)
         return tool
     }()

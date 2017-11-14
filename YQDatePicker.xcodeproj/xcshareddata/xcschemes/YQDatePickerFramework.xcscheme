@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "55A2DFAB1FB9E1A300829A94"
-               BuildableName = "YQDatePickerFramework.framework"
+               BuildableName = "YQDatePicker.framework"
                BlueprintName = "YQDatePickerFramework"
                ReferencedContainer = "container:YQDatePicker.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "55A2DFAB1FB9E1A300829A94"
-            BuildableName = "YQDatePickerFramework.framework"
+            BuildableName = "YQDatePicker.framework"
             BlueprintName = "YQDatePickerFramework"
             ReferencedContainer = "container:YQDatePicker.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "55A2DFAB1FB9E1A300829A94"
-            BuildableName = "YQDatePickerFramework.framework"
+            BuildableName = "YQDatePicker.framework"
             BlueprintName = "YQDatePickerFramework"
             ReferencedContainer = "container:YQDatePicker.xcodeproj">
          </BuildableReference>
