@@ -101,7 +101,7 @@ public class YQDatePicker: UIView {
             guard let constraint = widthConstraint else {
                 return
             }
-            constraint.isActive = false
+            NSLayoutConstraint.deactivate([constraint])
             widthConstraint = NSLayoutConstraint(item: container, attribute: .width, relatedBy: .equal, toItem: self, attribute: .width, multiplier: widthPercent, constant: 0)
             addConstraint(widthConstraint!)
         }
@@ -113,7 +113,7 @@ public class YQDatePicker: UIView {
             guard let constraint = heightConstraint else {
                 return
             }
-            constraint.isActive = false
+            NSLayoutConstraint.deactivate([constraint])
             heightConstraint = NSLayoutConstraint(item: container, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: heightPercent, constant: 0)
             addConstraint(heightConstraint!)
         }
