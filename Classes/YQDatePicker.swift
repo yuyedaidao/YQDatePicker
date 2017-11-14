@@ -103,7 +103,9 @@ public class YQDatePicker: UIView {
             }
             NSLayoutConstraint.deactivate([constraint])
             widthConstraint = NSLayoutConstraint(item: container, attribute: .width, relatedBy: .equal, toItem: self, attribute: .width, multiplier: widthPercent, constant: 0)
-            addConstraint(widthConstraint!)
+            widthConstraint!.priority = UILayoutPriority(rawValue: constraint.priority.rawValue + 1)
+            addConstraint(widthConstraint!) //这样是避免在更新约束时有警告的问题，严重怀疑是系统bug
+            layoutIfNeeded()
         }
     }
     
@@ -115,7 +117,9 @@ public class YQDatePicker: UIView {
             }
             NSLayoutConstraint.deactivate([constraint])
             heightConstraint = NSLayoutConstraint(item: container, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: heightPercent, constant: 0)
+            heightConstraint!.priority = UILayoutPriority(rawValue: constraint.priority.rawValue + 1)
             addConstraint(heightConstraint!)
+            layoutIfNeeded()
         }
     }
     
@@ -157,8 +161,10 @@ public class YQDatePicker: UIView {
         addConstraint(NSLayoutConstraint(item: container, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0))
         addConstraint(NSLayoutConstraint(item: container, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0))
         widthConstraint = NSLayoutConstraint(item: container, attribute: .width, relatedBy: .equal, toItem: self, attribute: .width, multiplier: widthPercent, constant: 0)
+        widthConstraint?.priority = .defaultLow
         addConstraint(widthConstraint!)
         heightConstraint = NSLayoutConstraint(item: container, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: heightPercent, constant: 0)
+        heightConstraint?.priority = .defaultLow
         addConstraint(heightConstraint!)
 
         container.addSubview(topTool)
@@ -168,7 +174,9 @@ public class YQDatePicker: UIView {
         
         container.addSubview(datePicker)
         datePicker.translatesAutoresizingMaskIntoConstraints = false
-        container.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[datePicker]-0-|", options: .alignAllLeading, metrics: nil, views: views))
+        container.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[datePicker]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views))
+//        container.addConstraint(NSLayoutConstraint(item: datePicker, attribute: .leading, relatedBy: .equal, toItem: container, attribute: .leading, multiplier: 1, constant: 0))
+//        container.addConstraint(NSLayoutConstraint(item: datePicker, attribute: .trailing, relatedBy: .equal, toItem: container, attribute: .trailing, multiplier: 1, constant: 0))
         container.addConstraint(NSLayoutConstraint(item: datePicker, attribute: .top, relatedBy: .equal, toItem: topTool, attribute: .bottom, multiplier: 1, constant: 0))
         
         container.addSubview(bottomTool)
